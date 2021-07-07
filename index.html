@@ -16,22 +16,14 @@
 </style>
 </head>
 <body>
-  <img src="zoom.png" alt="Zoom Integration" width="1440" height="875">
+  <img src="beasy.png" alt="DealBox Platform" width="2560" height="1329">
 <script>
-  (() => {
-    const resizer = document.createElement('script')
-    resizer.src = 'https://cdn.jsdelivr.net/npm/iframe-resizer@4.2.11/js/iframeResizer.min.js'
-    document.body.appendChild(resizer)
-    resizer.addEventListener('load', function () {
-      const iframe = document.createElement('iframe')
-      iframe.id = 'crowdsmart-embed-app'
-      iframe.src = 'https://www.crowdsmart.ai/embed/evaluation/cokecon/5ead8792-b366-11eb-a76d-0a72d1dc96e5/84a96a6a-b366-11eb-958b-0a72d1dc96e5'
-      document.body.appendChild(iframe)
-      iframe.addEventListener('load', function () {
-        iFrameResize({}, '#crowdsmart-embed-app')
-      })
-    })
-  })()
+  (
+  <link href="https://www.crowdsmart.ai/css/embedStyle.css" rel="stylesheet" type="text/css">
+  <script
+      src="https://www.crowdsmart.ai/js/embedScript.js"
+      id="crowdsmart-embed-script"
+      data-embed-url="https://www.crowdsmart.ai/embed/evaluation/demo/1f751cf6-fd28-11ea-83df-06154739ad7c/852b2e14-fd28-11ea-820a-06154739ad7c">
 </script>
   </body>
 </html>
